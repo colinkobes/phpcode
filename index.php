@@ -20,7 +20,7 @@ $dbQueryResponse;
 error_log(print_r($verb, TRUE));
 switch ($verb) {
     case 'GET':
-    		// sample GET URL
+    		// sample GET URLL
             $url = "http://ip.jsontest.com/";
 			$getRequestResponse = file_get_contents($url);
 			

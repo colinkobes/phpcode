@@ -24,13 +24,13 @@ switch ($verb) {
             $url = "http://ip.jsontest.com/";
 			$getRequestResponse = file_get_contents($url);
 			
-			$link = mysqli_connect('myHost', 'myUser', 'myPassword', 'myDatabase');
+			$link = mysqli_connect('140.86.15.104', 'Captain', 'welcome1', 'deathstar');
 			// Check connection
 			if (mysqli_connect_errno()) {
 			  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 			} else {
 				echo 'Connected successfully';
-				$query = 'SELECT * FROM MyTable';
+				$query = 'SELECT * FROM SecretTable';
 				$result = mysqli_query($link, $query);
 				$dbQueryResponse = $result->fetch_assoc();
 			}
